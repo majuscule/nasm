@@ -12,7 +12,7 @@ _start:
     jg myFirstASMLabel          ; Jump if greater than to myFirstASMLabel
 
     mov byte [done], 1
-
+    
     mov eax,4            ; Put magic # for system call sys_write into eax
     mov ebx,1            ; Prepare arg 1 of sys_write, 1 - file descriptor of stdo
     mov ecx,hello        ; Prepare arg 2, reference to string hello
